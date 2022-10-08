@@ -1,0 +1,11 @@
+[package]
+name = "remoc-lost-message"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+remoc = { version = "0.10.0", default-features = false, features = ["rch", "codec-bincode"]}
+tokio = { version = "1.18.2", features = ["sync", "macros"]}
+async-channel = "1.7.1"
